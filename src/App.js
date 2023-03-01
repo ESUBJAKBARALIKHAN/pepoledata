@@ -59,14 +59,15 @@ const App = () => {
                     alignItems: "center",
                     border: "1px solid black",
                     borderRadius: "20px",
+                    margin:"0",padding:"0"
                   }}
                 >
-                  <p style={{ width: "40px", backgroundColor: "green" }}>
+                  <p style={{ width: "40px"}}>
                     {index}
                   </p>
-                  <div>
-                    <p>Name: {item.name}</p>
-                    <p>Location: {item.location}</p>
+                  <div style={{flex:1,display:"flex",flexDirection:"column"}}>
+                    <p style={{backgroundColor:"blue",margin:"0",padding:"0",overflow:"hidden",borderTopRightRadius:"10px"}}>Name: {item.name}</p>
+                    <p style={{backgroundColor:"white",margin:"0",padding:"0", borderBottomRightRadius:"10px"}}>Location: {item.location}</p>
                   </div>
                 </div>
               );
